@@ -15,11 +15,10 @@ const Projects = () => {
             <div className="p-4">
               <h3 className="text-lg font-bold mb-2">RGB Game</h3>
               <p className="text-gray-600">
-                The color game presents the user with an RGB value and several
-                color options. The user must select the color that matches the
-                RGB value. The game can have multiple levels of difficulty and
-                scoring, and may include a timer or other challenges to keep the
-                user engaged.
+                The color game displays an RGB value and several color options.
+                Users must match the correct color to the RGB value. The game
+                includes multiple levels of difficulty, scoring, and challenges
+                to keep users engaged.
               </p>
               <a
                 href="https://lakshaykamat.github.io/colorGame/"
@@ -38,11 +37,10 @@ const Projects = () => {
             <div className="p-4">
               <h3 className="text-lg font-bold mb-2">YT To Mp3</h3>
               <p className="text-gray-600">
-                A YouTube to MP3 converter project allows users to download the
-                audio track from a YouTube video as an MP3 file. The project may
-                include a user interface to enter the YouTube video URL and
-                choose the desired audio quality. The project can be developed
-                as a standalone desktop application or a web-based tool.
+                A YouTube to MP3 converter project enables users to download the
+                audio from a YouTube video as an MP3 file. Users can input the
+                video URL and choose audio quality. It can be a desktop app or
+                web-based.
               </p>
               <a
                 href="https://lakshaykamat.github.io/linktree/js-project/youtube-mp3/docs/index.html"
@@ -61,12 +59,11 @@ const Projects = () => {
             <div className="p-4">
               <h3 className="text-lg font-bold mb-2">Password Generator</h3>
               <p className="text-gray-600">
-                A password generator project creates strong passwords with
+                A password generator project generates strong passwords with
                 options for length, complexity, and character types. It may
-                include encryption and multi-factor authentication. The project
-                can be a web app or standalone tool. Its purpose is to provide
-                users with secure passwords for online accounts and data
-                protection.
+                include encryption and multi-factor authentication. It can be a
+                web app or standalone tool, and it aims to provide secure
+                passwords for online accounts and data protection.
               </p>
               <a
                 href="https://lakshaykamat.github.io/linktree/js-project/password-generator/docs/index.html"
