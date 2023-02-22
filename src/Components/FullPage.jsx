@@ -124,7 +124,7 @@ const FullPage = () => {
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://i.postimg.cc/h4ZJ30BD/colorgame-Prj.png"
+                src="/assets/colorgamePrj.png"
                 alt="Project 1"
               />
               <div className="p-4">
@@ -146,7 +146,7 @@ const FullPage = () => {
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://i.postimg.cc/PqHN83m4/ytprj.png"
+                src="/assets/ytprj.png"
                 alt="Project 2"
               />
               <div className="p-4">
@@ -168,7 +168,7 @@ const FullPage = () => {
             <div className="bg-white shadow-lg rounded-lg overflow-hidden">
               <img
                 className="w-full h-48 object-cover"
-                src="https://i.postimg.cc/qvyzqVCq/passPrj.png"
+                src="/assets/passPrj.png"
                 alt="Project 3"
               />
               <div className="p-4">
