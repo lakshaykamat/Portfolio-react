@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between py-4">
           <div className="text-white font-bold text-xl">Lakshay</div>
-          <div className="flex md:hidden absolute right-5 top-5">
+          <div className="flex md:hidden absolute right-5 top-4">
             <button
               type="button"
               className="text-gray-500 hover:text-white focus:outline-none focus:text-white"
@@ -36,24 +37,24 @@ const Navbar = () => {
               isOpen ? "flex flex-col" : "hidden"
             }`}
           >
-            <a
-              href="#"
+            <Link
+              to="/"
               className="text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium"
             >
               Home
-            </a>
+            </Link>
             <a
               href="#"
               className="text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium"
             >
               Projects
             </a>
-            <a
-              href="#"
+            <Link
+              to="/about"
               className="text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium"
             >
               About
-            </a>
+            </Link>
             <a
               href="#"
               className="text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium"
