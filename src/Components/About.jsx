@@ -1,5 +1,4 @@
 import React from "react";
-// import Image from "next/image";
 import { FaGraduationCap } from "react-icons/fa";
 import { GiTrophyCup } from "react-icons/gi";
 

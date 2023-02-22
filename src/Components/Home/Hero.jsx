@@ -6,7 +6,7 @@ const Hero = () => {
           <div className="md:w-1/2">
             <img
               className="w-full rounded md:max-w-lg mx-auto"
-              src="https://source.unsplash.com/random/300×300/?man"
+              src="https://source.unsplash.com/random/300×1200/?man"
               alt="Portrait of Lakshay Kamat"
             />
           </div>

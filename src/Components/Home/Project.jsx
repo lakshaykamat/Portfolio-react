@@ -1,4 +1,4 @@
-const Projects = () => {
+const Project = () => {
   return (
     <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
@@ -78,4 +78,4 @@ const Projects = () => {
     </section>
   );
 };
-export default Projects;
+export default Project;
