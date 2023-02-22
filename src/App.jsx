@@ -6,10 +6,10 @@ function App() {
 
   return (
     <>
-    <FullPage/>
-   {/* <Navbar/> */}
-   {/* <Hero/> */}
-   {/* <Projects/> */}
+    {/* <FullPage/> */}
+   <Navbar/>
+   <Hero/>
+   <Projects/>
     </>
   )
 }

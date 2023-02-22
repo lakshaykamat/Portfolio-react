@@ -9,7 +9,7 @@ const Projects = () => {
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
               className="w-full h-48 object-cover"
-              src="/src/assets/colorgamePrj.png"
+              src="/assets/colorgamePrj.png"
               alt="Project 1"
             />
             <div className="p-4">
@@ -31,7 +31,7 @@ const Projects = () => {
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
               className="w-full h-48 object-cover"
-              src="/src/assets/ytprj.png"
+              src="/assets/ytprj.png"
               alt="Project 2"
             />
             <div className="p-4">
@@ -53,7 +53,7 @@ const Projects = () => {
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img
               className="w-full h-48 object-cover"
-              src="/src/assets/passPrj.png"
+              src="/assets/passPrj.png"
               alt="Project 3"
             />
             <div className="p-4">
