@@ -1,27 +1,18 @@
 import React from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { socialMediaLinks } from "../assets/socialMediaLinks";
 
 const Footer = () => {
-    const socialMediaLinks = {
-        twitter:"https://twitter.com/Lakshaykamat",
-        github:"https://github.com/lakshaykamat/",
-        facebook:"https://www.facebook.com/Thelakshaykamat",
-        instagram:"https://www.instagram.com/lakshaykamat.exe/",
-        skype:"https://join.skype.com/invite/uFs3pAV4xUMG",
-        linkedIn:"https://www.linkedin.com/in/lakshaykamat/",
-        mail:"lakshaykamat2048@gmail.com",
-        tel:"+919958125355"
-    }
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8">
+    <footer className="bg-gray-900 text-gray-300 py-5">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center">
           <h3 className="text-2xl font-bold">Lakshay Kamat</h3>
         </div>
         <div className="flex items-center">
           <ul className="flex space-x-4">
-            <li>
+            <li className="text-center">
               <a
                 href={`mailto:${socialMediaLinks.mail}`}
                 target="_blank"
@@ -32,7 +23,7 @@ const Footer = () => {
                 Email
               </a>
             </li>
-            <li>
+            <li className="text-center">
               <a
                 href={`tel:${socialMediaLinks.tel}`}
                 target="_blank"
@@ -43,7 +34,7 @@ const Footer = () => {
                 Phone
               </a>
             </li>
-            <li>
+            <li className="text-center">
               <a
                 href={socialMediaLinks.github}
                 target="_blank"
@@ -54,7 +45,7 @@ const Footer = () => {
                 Github
               </a>
             </li>
-            <li>
+            <li className="text-center">
               <a
                 href={socialMediaLinks.linkedIn}
                 target="_blank"
@@ -65,7 +56,7 @@ const Footer = () => {
                 LinkedIn
               </a>
             </li>
-            <li>
+            <li className="text-center">
               <a
                 href={socialMediaLinks.twitter}
                 target="_blank"

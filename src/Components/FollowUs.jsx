@@ -1,20 +1,12 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { BsSkype, BsTelephoneFill } from 'react-icons/bs';
+import { socialMediaLinks } from '../assets/socialMediaLinks';
 
 const FollowUs = () => {
-    const socialMediaLinks = {
-        twitter:"https://twitter.com/Lakshaykamat",
-        github:"https://github.com/lakshaykamat/",
-        facebook:"https://www.facebook.com/Thelakshaykamat",
-        instagram:"https://www.instagram.com/lakshaykamat.exe/",
-        skype:"https://join.skype.com/invite/uFs3pAV4xUMG",
-        linkedIn:"https://www.linkedin.com/in/lakshaykamat/",
-        mail:"lakshaykamat2048@gmail.com",
-        tel:"+919958125355"
-    }
+
   return (
-    <div className="py-16 bg-gray-100">
+    <div className="py-52 bg-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Follow Us</h2>
