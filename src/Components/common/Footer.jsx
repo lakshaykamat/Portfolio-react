@@ -1,7 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { socialMediaLinks } from "../assets/socialMediaLinks";
+import { socialMediaLinks } from "../../assets/socialMediaLinks";
 
 const Footer = () => {
   return (

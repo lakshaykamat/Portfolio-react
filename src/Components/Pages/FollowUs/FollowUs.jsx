@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import { BsSkype, BsTelephoneFill } from 'react-icons/bs';
-import { socialMediaLinks } from '../assets/socialMediaLinks';
+import { socialMediaLinks } from '../../../assets/socialMediaLinks';
 
 const FollowUs = () => {
 

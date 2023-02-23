@@ -1,6 +1,6 @@
 import { FaAward } from 'react-icons/fa';
 
-import { awards } from '../../assets/certificates';
+import { awards } from '../../../assets/certificates';
 
 const AwardCard = ({ award }) => {
   return (
@@ -21,7 +21,7 @@ const AwardCard = ({ award }) => {
 function AwardsAndCertificates() {
   return (
     <div className="container m-auto my-10">
-    <h1 className="text-3xl font-bold text-gray-800 mb-10 text-center">Awards and Certificates</h1>
+    <h1 className="text-4xl font-bold text-gray-800 mb-10 text-center">Awards and Certificates</h1>
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
       {awards.map((award) => (
         <AwardCard key={award.id} award={award} />

@@ -1,4 +1,5 @@
 import React from "react";
+import { projects }  from "../../../assets/projects";
 const ProjectCard = (prop) =>{
   return(
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -23,32 +24,7 @@ const ProjectCard = (prop) =>{
 </div>
   )
 }
-const projects = [
-  {
-    title: "Project 10",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags:["maths","conversion"],
-    techStack: ["HTML", "CSS", "JavaScript"],
-    githubLink: "https://github.com/username/project-1",
-    demoLink: "https://demo.project1.com"
-  },
-  {
-    title: "Project 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags:["maths","conversion"],
-    techStack: ["React", "Firebase"],
-    githubLink: "https://github.com/username/project-2",
-    demoLink: "https://demo.project2.com"
-  },
-  {
-    title: "Project 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    tags:["maths","conversion"],
-    techStack: ["Node.js", "Express.js", "MongoDB"],
-    githubLink: "https://github.com/username/project-3",
-    demoLink: "https://demo.project3.com"
-  }
-];
+
 
 const ProjectPage = () => {
   //TODO Add Projects to the project page
