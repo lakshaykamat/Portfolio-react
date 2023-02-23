@@ -6,7 +6,7 @@ import { socialMediaLinks } from '../assets/socialMediaLinks';
 const FollowUs = () => {
 
   return (
-    <div className="py-52 bg-gray-100">
+    <div className="py-20 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Follow Us</h2>

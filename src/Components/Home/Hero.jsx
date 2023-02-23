@@ -1,4 +1,5 @@
 const Hero = () => {
+  //TODO Add a awards and certificates section to the home page
   return (
     <section className="bg-gray-900">
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">

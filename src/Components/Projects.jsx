@@ -51,6 +51,7 @@ const projects = [
 ];
 
 const ProjectPage = () => {
+  //TODO Add Projects to the project page
   return (
     <div className="bg-gray-100">
       <div className="container mx-auto px-4 py-10">

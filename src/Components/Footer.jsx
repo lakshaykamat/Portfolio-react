@@ -5,10 +5,10 @@ import { socialMediaLinks } from "../assets/socialMediaLinks";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-5">
+    <footer className="bg-gray-900 text-gray-300 py-5 px-5">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center">
-          <h3 className="text-2xl font-bold">Lakshay Kamat</h3>
+          <h3 className="text-2xl font-bold mb-4 md:m-0">Lakshay Kamat</h3>
         </div>
         <div className="flex items-center">
           <ul className="flex space-x-4">

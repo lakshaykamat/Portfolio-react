@@ -9,12 +9,13 @@ import FollowUs from './Components/FollowUs'
 import Skills from './Components/Home/Skills'
 import Footer from './Components/Footer'
 import BlogPage from './Components/Blog/BlogPage'
+import Awards from './Components/Home/AwardsAndCertificates'
 function App() {
   return (
     <>
    <Navbar/>
     <Routes>
-      <Route path='/' element={<><Hero/><Project/><Testomonial/><Skills/><Footer/></>}/>
+      <Route path='/' element={<><Hero/><Project/><Testomonial/><Skills/><Awards/><Footer/></>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/follow' element={<FollowUs/>}/>
       <Route path='/projects' element={<Projects/>}/>
