@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
   //TODO Add a awards and certificates section to the home page
   return (
@@ -21,12 +23,12 @@ const Hero = () => {
               have experience with a variety of technologies including HTML,
               CSS, JavaScript, and React.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/projects"
               className="bg-white text-gray-900 py-2 px-4 rounded-full font-bold text-sm uppercase tracking-wide hover:bg-gray-100"
             >
-              View Portfolio
-            </a>
+              View Projects
+            </Link>
           </div>
         </div>
       </div>
