@@ -1,30 +1,14 @@
 import { Route, Routes } from 'react-router-dom'
-import ProjectsPage from './Components/Pages/Projects/Projects.jsx'
-import AboutPage from './Components/Pages/About/About'
-import FollowUsPage from './Components/Pages/FollowUs/FollowUs'
 import Navbar from './Components/common/Navbar'
-import Hero from './Components/Pages/Home/Hero'
-import Project from './Components/Pages/Home/Project.jsx'
-import Testomonial from './Components/Pages/Home/Testimonials'
-import Skills from './Components/Pages/Home/Skills'
-import Footer from './Components/common/Footer'
+import HomePage  from './Components/Pages/Home/HomePage'
+import ProjectsPage from './Components/Pages/Projects/ProjectsPage.jsx'
+import FollowUsPage from './Components/Pages/FollowUs/FollowUs'
+import AboutPage from './Components/Pages/About/About'
 import BlogPage from './Components/Pages/Blog/BlogPage'
-import Awards from './Components/Pages/Home/AwardsAndCertificates'
-const HomePage = () =>{
-  return(
-    <>
-    <Hero/>
-    <Project/>
-    <Testomonial/>
-    <Skills/>
-    <Awards/>
-    <Footer/>
-    </>
-  )
-}
+
 function App() {
   return (
-    <>
+    <div className='font-[Montserrat]'>
    <Navbar/>
     <Routes>
       <Route 
@@ -43,7 +27,7 @@ function App() {
         path='/blog' 
         element={<BlogPage/>}/>
     </Routes>
-    </>
+    </div>
   )
 }
 

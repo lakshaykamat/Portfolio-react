@@ -10,9 +10,9 @@ const AwardCard = ({ award }) => {
         <p className="text-gray-600 text-sm mt-1">{award.issuer}</p>
         <p className="text-gray-600 text-sm mt-1">{award.date}</p>
       </div>
-      <img className="w-full p-3 object-cover mt-2" src={award.image} alt="award" />
+      <img className="w-full p-2 rounded h-64 object-cover mt-2" src={award.image} alt="award" />
       <div className="flex justify-end my-2 mx-4">
-        <FaAward className="text-yellow-500" size={30} />
+        <FaAward className="text-yellow-500" size={25} />
       </div>
     </div>
   );

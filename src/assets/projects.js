@@ -22,8 +22,8 @@ export const projects = [
         languages.frontEnd.React,
         languages.frontEnd.Tailwind
       ],
-      githubLink: "https://github.com/username/project-1",
-      demoLink: "https://demo.project1.com"
+      githubLink: "https://github.com/lakshaykamat/colorGame",
+      demoLink: "https://lakshaykamat.github.io/colorGame/"
     },
     {
       title: "Password Generator",
@@ -38,8 +38,8 @@ export const projects = [
         languages.frontEnd.CSS,
         languages.frontEnd.JS
       ],
-      githubLink: "https://github.com/username/project-2",
-      demoLink: "https://demo.project2.com"
+      githubLink: "https://github.com/lakshaykamat/linktree/tree/master/js-project/password-generator",
+      demoLink: "https://lakshaykamat.github.io/linktree/js-project/password-generator/docs/index.html"
     },
     {
       title: "Current Time",
