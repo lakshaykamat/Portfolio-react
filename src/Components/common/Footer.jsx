@@ -5,14 +5,14 @@ import { socialMediaLinks } from "../../assets/socialMediaLinks";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-5 px-5">
+    <footer className="bg-gray-900 text-gray-300 py-5 px-3">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center">
           <h3 className="text-2xl font-bold mb-4 md:m-0">Lakshay Kamat</h3>
         </div>
         <div className="flex items-center">
-          <ul className="flex space-x-4">
-            <li className="text-center">
+          <ul className="flex space-x-4 flex-wrap justify-center">
+            <li className="text-center m-2">
               <a
                 href={`mailto:${socialMediaLinks.mail}`}
                 target="_blank"
@@ -23,7 +23,7 @@ const Footer = () => {
                 Email
               </a>
             </li>
-            <li className="text-center">
+            <li className="text-center m-2">
               <a
                 href={`tel:${socialMediaLinks.tel}`}
                 target="_blank"
@@ -34,7 +34,7 @@ const Footer = () => {
                 Phone
               </a>
             </li>
-            <li className="text-center">
+            <li className="text-center m-2">
               <a
                 href={socialMediaLinks.github}
                 target="_blank"
@@ -45,7 +45,7 @@ const Footer = () => {
                 Github
               </a>
             </li>
-            <li className="text-center">
+            <li className="text-center m-2">
               <a
                 href={socialMediaLinks.linkedIn}
                 target="_blank"
@@ -56,7 +56,7 @@ const Footer = () => {
                 LinkedIn
               </a>
             </li>
-            <li className="text-center">
+            <li className="text-center m-2">
               <a
                 href={socialMediaLinks.twitter}
                 target="_blank"
