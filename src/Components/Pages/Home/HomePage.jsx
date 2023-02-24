@@ -9,9 +9,9 @@ const HomePage = () =>{
     return(
       <>
       <Hero/>
-      <Resume/>
-      <Project/>
       <Testomonial/>
+      {/* <Project/> */}
+      <Resume/>
       <Skills/>
       <Awards/>
       <Footer/>

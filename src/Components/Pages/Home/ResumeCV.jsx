@@ -4,7 +4,7 @@ const para = "Hello, my name is Lakshay Kamat, and I am a web developer with thr
 function ResumeCV() {
   return (
     <section className="bg-gray-100 py-16 ">
-      <div className="m-auto md:m-auto max-w-xl container px-4 mx-auto">
+      <div className="m-auto md:m-auto max-w-2xl container px-4 mx-auto">
         <h2 className="text-3xl font-semibold mb-4">Resume &amp; CV</h2>
         <div className="m-2 md:m-0">
           <p>{para}</p>
