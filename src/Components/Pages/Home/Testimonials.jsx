@@ -1,22 +1,5 @@
-import React from "react";
 
-const Testimonials = () => {
-  const testimonials = [
-    {
-      name: "John Doe",
-      title: "Web Developer",
-      quote: "I was thoroughly impressed by the work of the web developer. Their attention to detail and expertise in coding made my website a seamless and visually appealing experience. They were easy to communicate with and always delivered on time."},
-    {
-      name: "Jane Smith",
-      title: "Graphic Designer",
-      quote: "The graphic designer exceeded my expectations with their innovative and creative designs. They understood my vision and brought it to life in a way that surpassed what I could have imagined. I highly recommend their work.",
-    },
-    {
-      name: "Tom Jones",
-      title: "UX Designer",
-      quote: "The UX designer was a pleasure to work with. They were able to understand my users' needs and create an intuitive and user-friendly interface. Their work made my app much more accessible and enjoyable to use. I highly recommend their services for any UX design needs.",
-    },
-  ];
+const Testimonials = ({testimonials}) => {
 
   return (
     <section className="bg-gray-100 py-10">

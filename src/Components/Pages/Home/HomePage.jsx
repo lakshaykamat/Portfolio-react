@@ -2,18 +2,22 @@ import Hero from './Hero'
 import Project from './Project.jsx'
 import Testomonial from './Testimonials'
 import Skills from './Skills'
-import Awards from './AwardsAndCertificates'
+import AwardsAndCertificates from './AwardsAndCertificates'
 import Footer from './../../common/Footer'
 import Resume from './ResumeCV'
-const HomePage = () =>{
+const HomePage = ({testomonials,skills,awards}) =>{
     return(
       <>
       <Hero/>
-      <Testomonial/>
+      <Testomonial
+      testimonials={testomonials}/>
       {/* <Project/> */}
       <Resume/>
-      <Skills/>
-      <Awards/>
+      <Skills
+      skills={skills}/>
+      <AwardsAndCertificates
+      
+      awards={awards}/>
       <Footer/>
       </>
     )

@@ -1,6 +1,5 @@
 import { FaAward } from 'react-icons/fa';
 
-import { awards } from '../../../assets/certificates';
 
 const AwardCard = ({ award }) => {
   return (
@@ -18,7 +17,7 @@ const AwardCard = ({ award }) => {
   );
 };
 
-function AwardsAndCertificates() {
+function AwardsAndCertificates({awards}) {
   return (
     <div className="container m-auto my-10">
     <h1 className="text-4xl font-bold text-gray-800 mb-10 text-center">Awards and Certificates</h1>
