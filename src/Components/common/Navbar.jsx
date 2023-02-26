@@ -17,10 +17,10 @@ const Navbar = () => {
         path: "/about",
         linkName: "About"
       },
-      {
-        path: "/follow",
-        linkName: "Skills"
-      },
+      // {
+      //   path: "/follow",
+      //   linkName: "Skills"
+      // },
     ],
   };
   const allLinks = navbarData.links.map((item,index)=>{

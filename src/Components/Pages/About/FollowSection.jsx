@@ -10,7 +10,7 @@ const FollowUs = ({socialMediaLinks}) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold text-indigo-600 tracking-wide uppercase">Follow Us</h2>
-          <p className="mt-1 text-3xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Stay Connected</p>
+          <p className="mt-1 text-3xl font-extrabold text-gray-900 sm:text-4xl sm:tracking-tight lg:text-5xl">Stay Connected</p>
           <p className="max-w-xl mt-5 mx-auto text-md text-gray-500">Follow us on social media to stay up-to-date with our latest news and announcements.</p>
         </div>
         <div className="mt-12">

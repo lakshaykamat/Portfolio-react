@@ -12,7 +12,7 @@ export default function AboutSection({degree,para,image,achievements}) {
               <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
                 About Me
               </h2>
-              <p className="mt-4 text-md text-gray-500">{para}</p>
+              <p className="mt-4 text-lg text-gray-500">{para}</p>
               <div className="mt-8 flex">
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
@@ -20,7 +20,7 @@ export default function AboutSection({degree,para,image,achievements}) {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-md font-bold text-gray-900">Education</h3>
+                  <h3 className="text-xl font-bold text-gray-900">Education</h3>
                   <p className="mt-2 text-base text-gray-500">
                     {degree}
                   </p>
@@ -33,7 +33,7 @@ export default function AboutSection({degree,para,image,achievements}) {
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-md font-bold text-gray-900">
+                  <h3 className="text-xl font-bold text-gray-900">
                     Achievements
                   </h3>
                   <ul className="mt-2 text-base text-gray-500 list-disc list-inside">

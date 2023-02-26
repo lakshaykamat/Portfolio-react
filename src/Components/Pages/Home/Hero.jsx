@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Hero = () => {
-  //TODO Add a awards and certificates section to the home page
+const Hero = ({para}) => {
   return (
     <section className="bg-gray-900">
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
@@ -18,10 +17,7 @@ const Hero = () => {
               Lakshay Kamat
             </h1>
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-6">
-              I'm a web developer with a passion for creating beautiful and
-              functional websites. I specialize in front-end development and
-              have experience with a variety of technologies including HTML,
-              CSS, JavaScript, and React.
+              {para}
             </p>
             <Link
               to="/projects"
