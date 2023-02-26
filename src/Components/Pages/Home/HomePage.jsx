@@ -16,9 +16,7 @@ const HomePage = ({testomonials,skills,awards}) =>{
       <Skills
       skills={skills}/>
       <AwardsAndCertificates
-      
       awards={awards}/>
-      <Footer/>
       </>
     )
   }

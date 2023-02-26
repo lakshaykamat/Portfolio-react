@@ -2,13 +2,14 @@ import { Route, Routes } from 'react-router-dom'
 import Navbar from './Components/common/Navbar'
 import HomePage  from './Components/Pages/Home/HomePage'
 import ProjectsPage from './Components/Pages/Projects/ProjectsPage.jsx'
-import FollowUsPage from './Components/Pages/FollowUs/FollowUs'
-import AboutPage from './Components/Pages/About/About'
+import AboutPage from './Components/Pages/About/AboutPage'
 import BlogPage from './Components/Pages/Blog/BlogPage'
+import { about } from './assets/about'
 import {testimonials} from './assets/testimonials'
 import {skills} from './assets/skills'
 import {awards} from './assets/certificates'
 import { socialMediaLinks } from './assets/socialMediaLinks';
+import Footer from './Components/common/Footer'
 function App() {
   return (
     <div className='font-[Montserrat]'>
@@ -23,18 +24,20 @@ function App() {
         />}/>
       <Route 
         path='/about' 
-        element={<AboutPage/>}/>
-      <Route 
-        path='/follow' 
-        element={<FollowUsPage
+        element={
+        <AboutPage
+        about={about}
         socialMediaLinks={socialMediaLinks}/>}/>
+      {/* <Route 
+        path='/follow' 
+        element={
+        <FollowUsPage
+        socialMediaLinks={socialMediaLinks}/>}/> */}
       <Route 
         path='/projects' 
         element={<ProjectsPage/>}/>
-      <Route 
-        path='/blog' 
-        element={<BlogPage/>}/>
     </Routes>
+    <Footer/>
     </div>
   )
 }
