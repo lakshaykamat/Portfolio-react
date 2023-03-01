@@ -2,18 +2,22 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const navbarData = {
     title: "Lakshay Kamat",
     links: [
       {
+        id:1,
         path: "/",
         linkName: "Home",
       },
       {
+        id:2,
         path: "/projects",
         linkName: "Projects",
       },
       {
+        id:3,
         path: "/about",
         linkName: "About"
       },
@@ -23,11 +27,10 @@ const Navbar = () => {
       // },
     ],
   };
+
   const allLinks = navbarData.links.map((item,index)=>{
     return <Link key={index} to={item.path} className="text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium focus:bg-gray-500 focus:font-bold focus:text-white">{item.linkName}</Link>
   })
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <nav className="bg-gray-900">
       <div className="container mx-auto px-4">

@@ -4,6 +4,7 @@ import HomePage  from './Components/Pages/Home/HomePage'
 import ProjectsPage from './Components/Pages/Projects/ProjectsPage.jsx'
 import AboutPage from './Components/Pages/About/AboutPage'
 import { about } from './assets/about'
+import { projects } from './assets/projects'
 import {testimonials} from './assets/testimonials'
 import {skills} from './assets/skills'
 import {awards} from './assets/certificates'
@@ -34,7 +35,8 @@ function App() {
         socialMediaLinks={socialMediaLinks}/>}/> */}
       <Route 
         path='/projects' 
-        element={<ProjectsPage/>}/>
+        element={<ProjectsPage
+        projects={projects}/>}/>
     </Routes>
     <Footer/>
     </div>

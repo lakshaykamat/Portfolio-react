@@ -2,7 +2,11 @@ import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
 import { GiTrophyCup } from "react-icons/gi";
 
-export default function AboutSection({degree,para,image,achievements}) {
+export default function AboutSection({
+  degree,
+  para,
+  image,
+  achievements}) {
   return (
     <div>
       <div className="bg-white">
