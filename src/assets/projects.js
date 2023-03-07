@@ -182,4 +182,35 @@ export const projects = [
       githubLink: "https://github.com/lakshaykamat/linktree/tree/master/js-project/weatherapp",
       demoLink: "https://lakshaykamat.github.io/linktree/js-project/weatherapp/index.html"
     },
+    {
+      title: "Contact Manager",
+      description: "The Contact Manager project is a software application that helps individuals and organizations manage their contact information. It allows users to add, edit, search, group, and tag contacts. The system has a user-friendly interface, data security, and backup and restore functionality.",
+      tags:[
+        "tools",
+        "productivity",
+      ],
+      techStack: [
+        languages.frontEnd.HTML,
+        languages.frontEnd.CSS,
+        languages.frontEnd.JS,
+        languages.frontEnd.React
+      ],
+      githubLink: "https://github.com/lakshaykamat/contact-manager",
+      demoLink: "https://lakshaycontacts.netlify.com"
+    },
+    {
+      title: "Wishlist",
+      description: "The Wishlist project is a web application that allows users to create and manage wishlists. It includes features such as adding items. Users can also browse and follow other users' wishlists. The application has data security measures, backup and restore functionality, and a recommendation engine.",
+      tags:[
+        "lifestyle",
+      ],
+      techStack: [
+        languages.frontEnd.HTML,
+        languages.frontEnd.CSS,
+        languages.frontEnd.JS,
+        languages.frontEnd.React
+      ],
+      githubLink: "https://github.com/lakshaykamat/wishlist",
+      demoLink: "https://7ongo4-3000.preview.csb.app/"
+    },
   ];
