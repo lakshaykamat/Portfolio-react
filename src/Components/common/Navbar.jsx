@@ -1,7 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link,useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  let location = useLocation()
+  useEffect(()=>{
+    console.log(location.pathname)
+  },[location])
   const [isOpen, setIsOpen] = useState(false);
   const navbarData = {
     title: "Lakshay Kamat",
@@ -27,9 +31,10 @@ const Navbar = () => {
       // },
     ],
   };
-
+//focus:bg-gray-500 focus:font-bold focus:text-white
   const allLinks = navbarData.links.map((item,index)=>{
-    return <Link key={index} to={item.path} className="text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium focus:bg-gray-500 focus:font-bold focus:text-white">{item.linkName}</Link>
+    console.log("l"+location.pathname,"I"+item.path)
+    return <Link key={index} to={item.path} className={`text-gray-300 hover:text-white md:mx-4 my-2 md:my-0 text-center block md:inline-block px-3 py-2 rounded-md text-sm font-medium ${location.pathname === item.path && "bg-gray-500 text-white"}`}>{item.linkName}</Link>
   })
   return (
     <nav className="bg-gray-900">
