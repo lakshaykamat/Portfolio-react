@@ -3,9 +3,6 @@ import { Link,useLocation } from "react-router-dom";
 
 const Navbar = () => {
   let location = useLocation()
-  useEffect(()=>{
-    console.log(location.pathname)
-  },[location])
   const [isOpen, setIsOpen] = useState(false);
   const navbarData = {
     title: "Lakshay Kamat",

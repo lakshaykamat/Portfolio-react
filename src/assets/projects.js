@@ -4,7 +4,11 @@ const languages = {
     CSS:"CSS",
     JS:"JavaScript",
     Tailwind:"TailwindCSS",
-    React:"React"
+    Reactjs:"Reactjs.js"
+  },
+  backEnd:{
+    Nodejs:"Node.js",
+    MongoDB:"MongoDB"
   }
 }
 export const projects = [
@@ -19,7 +23,7 @@ export const projects = [
         languages.frontEnd.HTML,
         languages.frontEnd.CSS,
         languages.frontEnd.JS,
-        languages.frontEnd.React,
+        languages.frontEnd.Reactjs,
         languages.frontEnd.Tailwind
       ],
       githubLink: "https://github.com/lakshaykamat/colorGame",
@@ -193,7 +197,7 @@ export const projects = [
         languages.frontEnd.HTML,
         languages.frontEnd.CSS,
         languages.frontEnd.JS,
-        languages.frontEnd.React
+        languages.frontEnd.Reactjs
       ],
       githubLink: "https://github.com/lakshaykamat/contact-manager",
       demoLink: "https://lakshaycontacts.netlify.com"
@@ -208,9 +212,28 @@ export const projects = [
         languages.frontEnd.HTML,
         languages.frontEnd.CSS,
         languages.frontEnd.JS,
-        languages.frontEnd.React
+        languages.frontEnd.Reactjs
       ],
-      githubLink: "https://github.com/lakshaykamat/wishlist",
+      githubLink:{
+        frontEnd:"https://github.com/lakshaykamat/wishlist",
+        backEnd:null
+      },
+      githubLink: "",
       demoLink: "https://7ongo4-3000.preview.csb.app/"
+    },
+    {
+      title: "Todo List",
+      description: "The Wishlist project is a web application that allows users to create and manage wishlists. It includes features such as adding items. Users can also browse and follow other users' wishlists. The application has data security measures, backup and restore functionality, and a recommendation engine.",
+      tags:[
+        "lifestyle",
+      ],
+      techStack: [
+        languages.frontEnd.HTML,
+        languages.frontEnd.CSS,
+        languages.frontEnd.JS,
+        languages.frontEnd.Reactjs
+      ],
+      githubLink: "https://github.com/lakshaykamat/todoappfrontend",
+      demoLink: "https://lakshaytodolist.netlify.app/"
     },
   ];
