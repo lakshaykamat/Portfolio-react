@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* custom styles for utilities layer */
+@layer utilities {
+    .rotate-45 {
+      transform: rotate(45deg);
+    }
+  }

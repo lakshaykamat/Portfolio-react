@@ -1,0 +1,46 @@
+.article-body {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.article-body h1 {
+  font-size: 1.875rem;
+  /* 30px */
+  line-height: 2.25rem;
+  font-weight: 700;
+  margin: 1.5rem 0rem;
+}
+
+.article-body h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.article-body h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+
+.article-body p {
+  margin: .8rem 0;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.article-body img {
+  margin: 1rem auto;
+  width: 70%;
+}
+
+.article-body a {
+  color: #007bff;
+  text-decoration: none;
+  border-bottom: 1px solid #007bff;
+}

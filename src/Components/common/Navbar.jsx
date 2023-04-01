@@ -22,10 +22,10 @@ const Navbar = () => {
         path: "/about",
         linkName: "About"
       },
-      // {
-      //   path: "/follow",
-      //   linkName: "Skills"
-      // },
+      {
+        path: "/blog",
+        linkName: "Blog"
+      },
     ],
   };
 //focus:bg-gray-500 focus:font-bold focus:text-white
