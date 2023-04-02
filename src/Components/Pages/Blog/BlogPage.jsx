@@ -3,19 +3,26 @@ import BlogCard from './BlogCard'
 import axios from 'axios';
 const BlogPage = () => {
     const [blogPost, setBlogPost] = useState(null)
-    let data = '';
+    const [blogCategory, setBlogCategory] = useState(null)
 
-    let config = {
+    let data = '';
+    let blogConfig = {
         method: 'get',
         maxBodyLength: Infinity,
         url: 'https://portfilio-blog-page.onrender.com/api/blog',
         headers: {},
         data: data
     };
+    let categoryConfig = {
+        method: 'get',
+        maxBodyLength: Infinity,
+        url: 'https://portfilio-blog-page.onrender.com/api/category/',
+        headers: {}
+    };
 
-    async function makeRequest () {
+    async function fetchBlog () {
         try {
-            const response = await axios.request(config);
+            const response = await axios.request(blogConfig);
             setBlogPost(response.data)
             console.log(JSON.stringify(response.data));
         }
@@ -24,75 +31,51 @@ const BlogPage = () => {
         }
     }
 
+    async function fetchCategory () {
+        try {
+            const response = await axios.request(categoryConfig);
+            setBlogCategory(response.data)
+            console.log(response.data);
+        }
+        catch (error) {
+            console.log(error);
+        }
+    }
 
     useEffect(() => {
-        makeRequest();
+        fetchBlog();
+        fetchCategory()
     }, [])
+
 
     return (
         <>
-            {!blogPost ? <h1>Loading...</h1> :
-                <div className='max-w-3xl mx-4  md:mx-auto my-6 flex flex-col gap-6'>
-                    <h1 className='text-4xl font-bold'>Work in Progress...</h1>
-                    <div className='flex gap-2 flex-wrap'>
-                        <div className=' bg-gray-600 flex items-center gap-2 justify-between  text-lg text-white'>
-                            <span className='py-1 pl-2 '>General</span>
-                            <span className=' py-1  bg-gray-700 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>React</span>
-                            <span className=' py-1  bg-gray-600 px-2'>11</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>React native</span>
-                            <span className=' py-1  bg-gray-600 px-2'>15</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
-                        <div className='rounded bg-gray-500  flex items-center gap-2 justify-between px-2 text-lg text-white'>
-                            <span className='py-1 '>PHP</span>
-                            <span className=' py-1  bg-gray-600 px-2'>1</span>
-                        </div>
+            <div className='max-w-3xl mx-4  md:mx-auto my-6 flex flex-col gap-6'>
+                <h1 className='text-4xl font-bold'>Blog</h1>
 
+                <div className='flex gap-2 flex-wrap'>
+                {!blogCategory ? <h1>Loading...</h1> : 
+                 blogCategory.map((item,index)=>{
+                    return <div key={index} className='bg-gray-600 flex items-center gap-2 justify-between  text-lg text-white'>
+                        <span className='py-1 pl-2 '>{item.name}</span>
+                        <span className=' py-1  bg-gray-700 px-2'>{item.blogCount} </span>
                     </div>
-                    {blogPost.map((item, index) => {
-                        return <BlogCard
-                            key={index}
-                            title={item.title}
-                            description={item.description}
-                            image={item.image}
-                            date={item.date}
-                            id={item._id}
-                        />
-                    })}
+                }) 
+                    
+                }
                 </div>
-            }
+
+                {!blogPost ? <h1>Loading..</h1> : blogPost.map((item, index) => {
+                    return <BlogCard
+                        key={index}
+                        title={item.title}
+                        description={item.description}
+                        image={item.image}
+                        date={new Date(item.publishedAt ).toDateString()}
+                        id={item._id}
+                    />
+                })}
+            </div>
         </>
     )
 }

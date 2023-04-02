@@ -10,7 +10,7 @@ const BlogCard = ({ title, description, image, date,id }) => {
       {/* Card Content */}
       <div className="p-4">
       <Link to={`/blog/${id}`}>
-        <h2 className="text-white text-2xl font-bold mb-2">{title}</h2>
+        <h2 className="hover:underline text-white text-2xl font-bold mb-2">{title}</h2>
       </Link>
         <p className="text-gray-400 text-base mb-4">{description}</p>
         <p className="text-gray-400 text-sm">{date}</p>
