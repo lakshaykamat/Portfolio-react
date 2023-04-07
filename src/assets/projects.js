@@ -236,4 +236,18 @@ export const projects = [
       githubLink: "https://github.com/lakshaykamat/todoappfrontend",
       demoLink: "https://lakshaytodolist.netlify.app/"
     },
+    {
+      title: "My Notes",
+      description: "The Wishlist project is a web application that allows users to create and manage wishlists. It includes features such as adding items. Users can also browse and follow other users' wishlists. The application has data security measures, backup and restore functionality, and a recommendation engine.",
+      tags:[
+        "lifestyle",
+      ],
+      techStack: [
+        languages.frontEnd.Reactjs,
+        languages.MongoDB,
+        languages.Nodejs,
+      ],
+      githubLink: "https://github.com/lakshaykamat/mynotes-client",
+      demoLink: "https://lakshaynotes.netlify.app/"
+    },
   ];
